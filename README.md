@@ -1,4 +1,8 @@
-# EXPERIMENT--02-INTEFACING-A-DIGITAL-INPUT-TO-ARM-DEVELOPMENT-BOARD
+```
+Name: Sanjay Ragavendar M K
+Register Number: 212222100045
+```
+# EXPERIMENT 02 INTEFACING A DIGITAL INPUT TO ARM-DEVELOPMENT-BOARD
 ## AIM: To Interface a Digital Input  (userpush button  ) to ARM   development board and write a  program to obtain  the data and flash the led  
 ## COMPONENTS REQUIRED: STM32 CUBE IDE, ARM IOT development board,  STM programmer tool.
 ## THEORY 
@@ -12,11 +16,11 @@ The full form of an ARM is an advanced reduced instruction set computer (RISC) m
    * PA5  -> GPIO Output
    * PC13 -> GPIO Input
 3. Configure the PC13 Port at Pull up Mode
-4. Acquire the code  
-5. Write the function a
+4. Generate the code  
+5. Write the function(Declare,Define,Call)
 6. Bulid Debug  
-7. connect the  ARM board to power supply and usb 
-8. check for execution of the output using run option 
+7. Connect the  ARM board to usb 
+8. Check for execution of the output using run option 
 
 
 ## STM 32 CUBE PROGRAM :
@@ -31,17 +35,13 @@ bool bstat;
 
 int main(void)
 {
-
   HAL_Init();
-
-
   MX_GPIO_Init();
 
   while (1)
   {
 	  push_button();
   }
-
 }
 
 void push_button()
@@ -56,10 +56,7 @@ void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
-
-
   HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1);
-
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSIDiv = RCC_HSI_DIV1;
@@ -81,7 +78,6 @@ void SystemClock_Config(void)
     Error_Handler();
   }
 }
-
 
 static void MX_GPIO_Init(void)
 {
@@ -105,22 +101,16 @@ static void MX_GPIO_Init(void)
 
 }
 
-
 void Error_Handler(void)
 {
-
   __disable_irq();
   while (1)
   {
   }
-
 }
-
 #ifdef  USE_FULL_ASSERT
-
 void assert_failed(uint8_t *file, uint32_t line)
 {
-
 }
 #endif
 ```
@@ -128,10 +118,10 @@ void assert_failed(uint8_t *file, uint32_t line)
 ## OUTPUT  :
 
 ### SWITCH OFF
- ![SWITCH OFF](https://github.com/Sanjay-2610/EXPERIMENT--02-INTEFACING-A-DIGITAL-INPUT-TO-ARM-DEVELOPMENT-BOARD/assets/91368803/5f6cc83f-dff9-4ef9-8870-483d3bfacc7a)
+ <img src="https://github.com/Sanjay-2610/EXPERIMENT--02-INTEFACING-A-DIGITAL-INPUT-TO-ARM-DEVELOPMENT-BOARD/assets/91368803/5f6cc83f-dff9-4ef9-8870-483d3bfacc7a" width=475 height=475>
  
-### SWITCH 
- ![switch On](https://github.com/Sanjay-2610/EXPERIMENT--02-INTEFACING-A-DIGITAL-INPUT-TO-ARM-DEVELOPMENT-BOARD/assets/91368803/e93f219e-fc26-4046-be94-74621e6062e4)
+### SWITCH ON 
+ <img src="https://github.com/Sanjay-2610/EXPERIMENT--02-INTEFACING-A-DIGITAL-INPUT-TO-ARM-DEVELOPMENT-BOARD/assets/91368803/e93f219e-fc26-4046-be94-74621e6062e4" width=475 height=475>
  
 ## RESULT :
-Interfacing a digital Input (Pushbutton ) with ARM microcontroller based IOT development is executed and the results are verified.
+Interfacing a digital Input (Pushbutton) with ARM microcontroller based IOT development is executed and the results are verified.
