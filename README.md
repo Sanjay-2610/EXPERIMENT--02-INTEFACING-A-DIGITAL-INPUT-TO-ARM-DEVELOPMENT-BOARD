@@ -118,10 +118,10 @@ void assert_failed(uint8_t *file, uint32_t line)
 ## OUTPUT  :
 
 ### SWITCH OFF
- <img src="https://github.com/Sanjay-2610/EXPERIMENT--02-INTEFACING-A-DIGITAL-INPUT-TO-ARM-DEVELOPMENT-BOARD/assets/91368803/5f6cc83f-dff9-4ef9-8870-483d3bfacc7a" width=475 height=475>
+ <img src="https://github.com/Sanjay-2610/EXPERIMENT--02-INTEFACING-A-DIGITAL-INPUT-TO-ARM-DEVELOPMENT-BOARD/assets/91368803/5f6cc83f-dff9-4ef9-8870-483d3bfacc7a" width=450 height=450>
  
 ### SWITCH ON 
- <img src="https://github.com/Sanjay-2610/EXPERIMENT--02-INTEFACING-A-DIGITAL-INPUT-TO-ARM-DEVELOPMENT-BOARD/assets/91368803/e93f219e-fc26-4046-be94-74621e6062e4" width=475 height=475>
+ <img src="https://github.com/Sanjay-2610/EXPERIMENT--02-INTEFACING-A-DIGITAL-INPUT-TO-ARM-DEVELOPMENT-BOARD/assets/91368803/e93f219e-fc26-4046-be94-74621e6062e4" width=450 height=450>
  
 ## RESULT :
 Interfacing a digital Input (Pushbutton) with ARM microcontroller based IOT development is executed and the results are verified.
